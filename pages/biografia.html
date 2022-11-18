@@ -17,7 +17,7 @@
     
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="../assets/css/styles.css" rel="stylesheet">
 </head>
 <body id="grilla">
@@ -28,7 +28,7 @@
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
             <div class="container-fluid px-5">
-                <a class="navbar-brand" href="index.html"><img src="../assets/img/logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,16 +83,16 @@
                 </div>
                 
                 
-              
                 
                 
-                <div class="row mt-3" >
+                
+                <div class="row mt-3 wow animate__animated animate__backInLeft"  >
                     <div class="text-center">
                         
                         
                         <div class="col-lg-12 ">
                             <p class="lead mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem debitis aspernatur tempore earum, quidem reiciendis sapiente distinctio fuga aliquam, ut sit aut praesentium. Aut earum modi ad repudiandae, quia laboriosam laudantium sed porro accusamus quam reprehenderit itaque, obcaecati architecto odit ab inventore rerum alias dolor. Nesciunt, eius molestiae magnam eos dolorum voluptate placeat quis omnis, exercitationem autem accusamus ipsam dolores aliquid iusto! Laboriosam maxime voluptates, deleniti ducimus error dolores enim nemo molestiae repellat quibusdam! Nostrum fugiat quo impedit ipsum cum possimus, corrupti optio debitis aliquam laudantium. Dolorum, ipsum sed? Vel obcaecati nemo tempore hic delectus illo nulla adipisci maxime.</p>
-                           
+                            
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         
                     </div>
                 </div>
-                <div class="row text-center mb-5">
+                <div class="row text-center mb-5 wow animate__animated animate__fadeIn">
                     <div class="d-flex justify-content-center col-md-3">
                         
                         <div class="card my-4 mx-0">
@@ -164,7 +164,7 @@
                 
                 
                 
-                                
+                
                 
                 
                 
@@ -183,45 +183,48 @@
             
         </main>
         <div class="container-fluid bg-dark" id="footer">
-    
+            
             <footer class="container py-5 text-white">
-              <div class="row">
-                <div class="col-md-8 mb-3">
-                  <h5>Sitios</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="biografia.html" class="nav-link p-0 text-muted">Biografía</a></li>
-                    <li class="nav-item mb-2"><a href="galeria.html" class="nav-link p-0 text-muted">Galeria</a></li>
-                    <li class="nav-item mb-2"><a href="agenda.html" class="nav-link p-0 text-muted">Agenda</a></li>
-                    <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
-                    
-                  </ul>
-                </div>
-                
-                
-                
-                <div class="col-md-4 mb-3">
-                  <form>
-                    <h5>Suscribite a nuestro newsletter</h5>
-                    
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                      <label for="newsletter" class="visually-hidden">Email</label>
-                      <input id="newsletter" type="email" class="form-control" placeholder="Ingresa tu email" required>
-                      <button class="btn btn-primary" type="submit">Suscribirme</button>
+                <div class="row">
+                    <div class="col-md-8 mb-3">
+                        <h5>Sitios</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="biografia.html" class="nav-link p-0 text-muted">Biografía</a></li>
+                            <li class="nav-item mb-2"><a href="galeria.html" class="nav-link p-0 text-muted">Galeria</a></li>
+                            <li class="nav-item mb-2"><a href="agenda.html" class="nav-link p-0 text-muted">Agenda</a></li>
+                            <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                            
+                        </ul>
                     </div>
-                  </form>
+                    
+                    
+                    
+                    <div class="col-md-4 mb-3">
+                        <form>
+                            <h5>Suscribite a nuestro newsletter</h5>
+                            
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter" class="visually-hidden">Email</label>
+                                <input id="newsletter" type="email" class="form-control" placeholder="Ingresa tu email" required>
+                                <button class="btn btn-primary" type="submit">Suscribirme</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>&copy; 2022 Nativos, Todos los derechos reservados.</p>
                 
-              </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 Nativos, Todos los derechos reservados.</p>
+                    
+                </div>
             </footer>
-          </div>
+        </div>
         
         
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
         
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
     </html>
