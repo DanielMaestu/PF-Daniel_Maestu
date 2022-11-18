@@ -65,7 +65,20 @@ body {
 .featurette-heading {
   letter-spacing: -.05rem;
   font-size: 40px;
+  transition: font-size 1s;
+       
 }
+
+.featurette-heading:hover {
+  
+  font-size: 60px;
+  color: #EB5E28;
+       
+}
+
+
+
+
 
 
 
@@ -78,6 +91,12 @@ body {
     font-size: 70px;
   }
 
+  .featurette-heading:hover {
+  
+    font-size: 100px;
+    color: #EB5E28;
+         
+  }
   
 }
 
