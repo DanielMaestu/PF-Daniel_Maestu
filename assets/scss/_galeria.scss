@@ -1,0 +1,10 @@
+
+
+.card_galery {
+    border: none;
+    img {
+        @include sizes(auto,200px);        
+        margin: 1rem;
+    }
+}
+

@@ -1,0 +1,93 @@
+* { /* etiqueta raíz */
+    
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 5rem;
+    padding-bottom: 0;
+    color: $bg-color-page;
+}
+
+.controles_flat {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+@mixin color-fondo-y-borde ($bg_color , $color_borde) {
+    background-color: $bg_color;
+    border-color: $color_borde;
+}
+
+@mixin sizes ($ancho , $alto) {
+    width: $ancho;
+    height: $alto;
+    
+}
+
+.form-control{
+    @extend .controles_flat;
+}
+
+
+.btn {
+    @extend .controles_flat;
+    @include color-fondo-y-borde($bg-primario,$bg-primario);
+    &:hover {
+        @include color-fondo-y-borde($bg-primario-hover,$bg-primario-hover);
+    }
+    
+}
+
+.navbar  {
+    @include sizes(auto,5rem );
+}
+
+.navbar-brand {
+    img{
+        width: 9rem;
+    }
+}
+
+
+.card{
+    @include sizes(20rem,auto );
+    
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.featurette-heading {
+    letter-spacing: -.05rem;
+    font-size: 40px;
+    transition: font-size 0.4s;
+    &:hover{
+        font-size: 50px;
+        color: $bg-primario;
+    }
+}
+
+//   Media Querie
+
+@media (min-width: 576px) {
+    
+    .featurette-heading {
+        font-size: 70px;
+        
+        &:hover{
+            font-size: 90px;
+            color: $bg-primario;
+        }
+    }
+    
+    
+    
+}
