@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  /* etiqueta raíz */
+  /* Etiqueta raíz */
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0; }
@@ -56,7 +56,9 @@ body {
 
 #grilla {
   display: grid;
-  grid-template-areas: "header header header header" "body body body body" "footer footer footer footer";
+  grid-template-areas: "header header header header"
+ "body body body body"
+ "footer footer footer footer";
   grid-template-columns: repeat(4, 1fr); }
 
 #header {
